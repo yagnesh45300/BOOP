@@ -1,0 +1,8 @@
+#include<iosteram.h>
+int main (){
+int en.num,name;
+cout<<"enter name";
+cin<<en.num
+cout<<"enter en.num";
+return 0;
+}
