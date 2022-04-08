@@ -1,8 +1,0 @@
-#include<iosteram.h>
-int main (){
-int num,age;
-cout<<"enter num";
-cin<<age
-cout<<"enter age";
-return 0;
-}
