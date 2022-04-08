@@ -1,8 +1,0 @@
-#include<iosteram.h>
-int main (){
-int x,y;
-cout<<"enter x";
-cin<<x
-cout<<"enter y";
-return 0;
-}
