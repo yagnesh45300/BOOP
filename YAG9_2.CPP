@@ -1,34 +1,41 @@
 #include<iostream.h>
 #include<conio.h>
-
-
-class B;
-
-class A{
-public:
-	void showB(B&);
-};
-
-class B{
-private:
-	int b;
-
-public:
-	B(){b=0;}
-friend void A::showB(B&x);
-};
-
-void A::showB(B&x)
+class classB;
+class classA
 {
-	//Since showB() is friend of B,it can
-	//acess private members ofB
-	std:cout<<"B::b="<<x.b;
+private:
+int numA;
+friend class classB;
+void display()
+{
+cout<<numA<<endl;
 }
-
+public:
+classA()
+{
+numA=15;
+}
+};
+class classB
+{
+private:
+int numB;
+public:
+classB()
+{
+numB=5;
+}
+int add()
+{
+classA objectA;
+objectA.display();
+return objectA.numA+numB;
+}
+};
 int main()
 {
-	A a;
-	B x;
-	a.showB(x);
-	return 0;
+classB objectB;
+cout<<"SUM="<<objectB.add()<<endl;
+getch();
+return 0;
 }
